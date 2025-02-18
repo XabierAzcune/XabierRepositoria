@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="emaitza"></p>
+    <p id="lortutakoa"></p>
+    <div class="diva"></div>
+    <script>
+        let arrayBat = [3,6,1,43];
+        function zenbakiakAldatzen(){
+            document.getElementById("emaitza").innerHTML=arrayBat[2];
+        }
+        zenbakiakAldatzen();
+        function proba(zerbait){
+            let biderketa = zerbait * zerbait^2;
+            document.getElementById("lortutakoa").innerHTML=biderketa;
+        }
+        proba(5);
+        function elementuaSortu(){
+            const para = document.createElement("p");
+            para.textContent = "Kaixo Mundua!!";
+            document.getElementsByClassName("diva")[0].appendChild(para);
+        }
+        setInterval(elementuaSortu,1000);
+    </script>
+</body>
+</html>
