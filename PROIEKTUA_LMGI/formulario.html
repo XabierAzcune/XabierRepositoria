@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/css_gif.gif" type="image/x-icon">
+    <link rel="stylesheet" href="estiloak/formularioa.css">
+    <title>Formularioa</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="Pertsonalizatzailea.html">Pertsonalizatzeko aukera</a></li>
+            <li><a href="formularioa.html">formularioa</a></li>
+            <li><a href="irudiak.html">irudiak</a></li>
+            <li><a href="modua.html">modua</a></li>
+        </ul>
+    </nav>
+    <div class="formulario-kontainerra">
+        <form method="post">
+          <div class="formulario-errenkada">
+            <label for="name">Izen osoa:</label>
+            <input type="text" id="name" name="name" placeholder="Sartu zure izen osoa">
+          </div>
+    
+          <div class="formulario-errenkada">
+            <label for="emaila">Emaila:</label>
+            <input type="email" id="emaila" name="emaila" placeholder="Sartu zure posta elektronikoa">
+          </div>
+    
+          <div class="formulario-errenkada">
+            <label for="pasahitza">Pasahitza:</label>
+            <input type="password" id="pasahitza" name="pasahitza" placeholder="Sortu pasahitza">
+          </div>
+
+          <div class="formulario-errenkada">
+            <button type="button">Onartu</button>
+          </div>
+          
+          <div class="formulario-errenkada">
+            <label>Generoa:</label>
+            <div class="form-taldea">
+              <input type="radio" id="gizonezkoa" name="generoa" value="gizonezkoa">
+              <label for="gizona">Gizonezkoa</label>
+    
+              <input type="radio" id="emakumezkoa" name="generoa" value="emakumezkoa">
+              <label for="emakumea">Emakumezkoa</label>
+    
+              <input type="radio" id="bestea" name="generoa" value="bestea">
+              <label for="bestea">Beste bat</label>
+            </div>
+          </div>
+    
+          <div class="formulario-errenkada">
+            <label for="estatua">Estatua:</label>
+            <select id="estatua" name="estatua">
+              <option value="">Aukeratu zure estatua</option>
+              <option value="us">Ameriketako Estatu Batuak</option>
+              <option value="uk">Erresuma Batuak</option>
+              <option value="kanada">Kanada</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+    
+          <div class="formulario-errenkada">
+            <button type="submit" class="submit-btn">Izena eman</button>
+          </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CSS Hub ikastaroa. Eskubide guztiak erreserbatuak.</p>
+    </footer>
+</body>
+</html>
