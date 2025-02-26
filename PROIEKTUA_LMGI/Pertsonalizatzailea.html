@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pertsonalizatzailea</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -46,14 +46,44 @@
         .Menua * {
             color: black !important;
         }
+        .Aukeren_laukiak{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
 
+        .Atzeko-kolorea, .testu-kolorea, .testu-tamaina, .letra-estiloa {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .Atzeko-kolorea[data-color="red"] { background: red; }
+        .Atzeko-kolorea[data-color="green"] { background: lightgreen; }
+        .Atzeko-kolorea[data-color="blue"] { background: lightblue; }
+        .Atzeko-kolorea[data-color="gray"] { background: gray; }
+        .Atzeko-kolorea[data-color="white"] { background: white; }
+
+        .testu-kolorea[data-color="red"] { background: red; }
+        .testu-kolorea[data-color="black"] { background: black; color: white; }
+        .testu-kolorea[data-color="blue"] { background: blue; }
+        .testu-kolorea[data-color="white"] { background: white; border: 1px solid black; color: black; }
+        .testu-kolorea[data-color="green"] { background: green; }
+
+        .letra-estiloa[data-font="Arial"] { font-family: Arial, sans-serif; }
+        .letra-estiloa[data-font="Times"] { font-family: "Times New Roman", serif; }
+        .letra-estiloa[data-font="Courier"] { font-family: "Courier New", monospace; }
+        .letra-estiloa[data-font="Fantasy"] { font-family: fantasy; }
+        .letra-estiloa[data-font="Monospace"] { font-family: monospace; }
     </style>
 </head>
 <body> 
     <nav>
         <a id="pertsonalizatzaileBotoia">Pertsonalizatzailea</a>
-        <a href="pagina2.html">Formularioa</a>
-        <a href="pagina3.html">Irudiak</a>
+        <a href="formulario.html">Formularioa</a>
+        <a href="irudiak.html">Irudiak</a>
     </nav>
 
     <div class="Menua" id="Menupertsonalizatzailea">
