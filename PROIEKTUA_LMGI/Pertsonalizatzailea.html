@@ -4,6 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: black;
+            margin: 0;
+            padding: 0;
+            transition: background 0.3s ease, color 0.3s ease, font-family 0.3s ease;
+        }
+        header {
+            margin: 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .Menua {
+            display: none;
+            position: absolute;
+            background: white;
+            color: black;
+            padding: 15px;
+            border: 1px solid #ccc;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+        }
+
+        .Menua * {
+            color: black !important;
+        }
+
+    </style>
 </head>
 <body> 
     <nav>
@@ -40,10 +84,12 @@
             <button class="letra-estiloa" data-font="Monospace">M</button>
         </div>
     </div>
-
-    <h1>Ongi etorri pertsonalizatzailera</h1>
-    <p>Paragrafo honen estiloa alda dezakezu</p>
-    <p>Klik egin pertsonalizatzeko</p>
-    <p></p>
+    <main>
+        <header>
+            <h1>Ongi etorri pertsonalizatzailera</h1>
+            <p>This is a paragraph that you can adapt its content.</p>
+            <p>Click to Personalizer banner.</p>
+        </header>
+    </main>
 </body>
 </html>
