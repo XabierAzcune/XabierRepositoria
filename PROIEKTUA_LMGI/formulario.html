@@ -29,16 +29,14 @@
             <label for="emaila">Emaila:</label>
             <input type="email" id="emaila" name="emaila" placeholder="Sartu zure posta elektronikoa">
             <script>
+              
               function emaila() {
                 let email = document.getElementById("emaila").value;
-                if (email.includes("@") && email.indexOf(".") > email.indexOf("@")) {
-                  document.getElementById("emaitza2").textContent = "Onartua";
-                } else {
-                  document.getElementById("emaitza2").textContent = "Ez da email balioduna";
-                }
+              if (email.includes("@")){
+                document.getElementById("emaitza2").textContent="Onartua";
               }
+            }
             </script>
-            
           </div>
 
           <div class="formulario-errenkada">
@@ -72,7 +70,7 @@
           </div>
     
           <div class="formulario-errenkada">
-            <button type="submit" class="submit-btn">Bidali</button>
+            <button type="submit" class="botoiabibali">Bidali</button>
           </div>
         </form>
     </div>
