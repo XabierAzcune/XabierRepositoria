@@ -121,5 +121,42 @@
             <p>Click to Personalizer banner.</p>
         </header>
     </main>
+    <script>
+        document.getElementById('pertsonalizatzaileBotoia').addEventListener('click', function() {
+            let menu = document.getElementById('Menupertsonalizatzailea');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        });
+
+        document.querySelectorAll('.Atzeko-kolorea').forEach(button => {
+            button.addEventListener('click', function() {
+                document.body.style.backgroundColor = this.getAttribute('data-color');
+            });
+        });
+
+        document.querySelectorAll('.testu-kolorea').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('main h1, main p').forEach(element => {
+                    element.style.color = this.getAttribute('data-color');
+                });
+            });
+        });
+
+        document.querySelectorAll('.testu-tamaina').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('main h1, main p').forEach(element => {
+                    element.style.fontSize = this.getAttribute('data-size');
+                });
+            });
+        });
+
+        document.querySelectorAll('.letra-estiloa').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('main h1, main p').forEach(element => {
+                    element.style.fontFamily = this.getAttribute('data-font');
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
