@@ -110,14 +110,15 @@
     </div>
 
     <script>
-
+        /*irudiak*/
         const images = [
             "png-clipart-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-thumbnail.png",
             "css_logo.png",
             "html.png",
             "png-clipart-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo.jpeg"
         ];
-
+        
+        /*aukeratuen laukiIrudia aldatzea botoietan klik egitean*/
         let currentImageIndex = 0;
 
         document.getElementById('Botoimagikoa').addEventListener('click', function() {
@@ -128,9 +129,24 @@
             irudikontenedorea.innerHTML = '';
             irudikontenedorea.appendChild(image);
         });
+        /*Irudia automatikoki aldatzea 300 ms-tik behin*/
+        let autoImageIndex = 0;
+        const kontainerdinamikoa = document.getElementById('kontainerdinamikoa');
 
-       
+        function changeAutoImage() {
+            autoImageIndex = (autoImageIndex + 1) % images.length;
+            const image = document.createElement('img');
+            image.src = images[autoImageIndex];
+            kontainerdinamikoa.innerHTML = '';
+            kontainerdinamikoa.appendChild(image);
+        }
 
+
+        setInterval(changeAutoImage, 300);
+        changeAutoImage();
+        document.getElementById('modua').addEventListener('click', function() {
+            document.body.classList.toggle('modu-iluna');
+        });
 
     </script>
     

@@ -122,7 +122,8 @@
         </header>
     </main>
     <script>
-    /*Erakutsi edo ezkutatu menua, "Pertsonalizatzailea" sakatzen duzunean. */        document.getElementById('pertsonalizatzaileBotoia').addEventListener('click', function() {
+    /*Erakutsi edo ezkutatu menua, "Pertsonalizatzailea" sakatzen duzunean. */        
+        document.getElementById('pertsonalizatzaileBotoia').addEventListener('click', function() {
             let menu = document.getElementById('Menupertsonalizatzailea');
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         });
@@ -148,7 +149,7 @@
                 });
             });
         });
-        /*Cambia la fuente del texto según la opción seleccionada.*/
+        /*Letraren estiloa aldatzen du, sakatuta dagoen botoiaren arabera.*/
         document.querySelectorAll('.letra-estiloa').forEach(button => {
             button.addEventListener('click', function() {
                 document.querySelectorAll('main h1, main p').forEach(element => {
