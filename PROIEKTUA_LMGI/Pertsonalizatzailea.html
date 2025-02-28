@@ -122,17 +122,17 @@
         </header>
     </main>
     <script>
-        document.getElementById('pertsonalizatzaileBotoia').addEventListener('click', function() {
+    /*Erakutsi edo ezkutatu menua, "Pertsonalizatzailea" sakatzen duzunean. */        document.getElementById('pertsonalizatzaileBotoia').addEventListener('click', function() {
             let menu = document.getElementById('Menupertsonalizatzailea');
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         });
-
+    /*Aldatu <body>-aren atzeko planoaren kolorea, hautatutako botoiaren arabera. */
         document.querySelectorAll('.Atzeko-kolorea').forEach(button => {
             button.addEventListener('click', function() {
                 document.body.style.backgroundColor = this.getAttribute('data-color');
             });
         });
-
+        /*<main> barruko testuen kolorea aldatzen du.*/
         document.querySelectorAll('.testu-kolorea').forEach(button => {
             button.addEventListener('click', function() {
                 document.querySelectorAll('main h1, main p').forEach(element => {
@@ -140,7 +140,7 @@
                 });
             });
         });
-
+        /*Testuaren tamaina aldatzen du, sakatuta dagoen botoiaren arabera.*/
         document.querySelectorAll('.testu-tamaina').forEach(button => {
             button.addEventListener('click', function() {
                 document.querySelectorAll('main h1, main p').forEach(element => {
@@ -148,7 +148,7 @@
                 });
             });
         });
-
+        /*Cambia la fuente del texto según la opción seleccionada.*/
         document.querySelectorAll('.letra-estiloa').forEach(button => {
             button.addEventListener('click', function() {
                 document.querySelectorAll('main h1, main p').forEach(element => {
